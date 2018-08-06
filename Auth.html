@@ -1,0 +1,213 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <script language="javascript" type="text/javascript" src="JavaScript/Auth.js"></script>
+  <script language="javascript" type="text/javascript" src="JavaScript/Background.js"></script>
+  <script language="javascript" type="text/javascript" src="JavaScript/Menu_manipulation.js"></script>
+  <link rel="stylesheet" type="text/css" href="Style/Auth.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+<body>
+  <div class = "side_menu">
+    <nav>
+      <ul>
+        <li><div class = "spacing"></div></li>
+        <li><a href = "#">Home</a></li>
+        <li><a href = "#">Explore</a></li>
+        <li><a href = "#">Courses</a></li>
+        <li><a href = "#">Arcade</a></li>
+        <li><a href = "#">Blog</a></li>
+        <li><div class = "spacing"></div></li>
+      </ul>
+    </nav>
+  </div>
+  <div class = "wraper">
+    <header>
+      <div class = "navbar">
+        <div class = "header_logo">
+          <a href = "#">
+            <div class = "logo_wraper">
+              <?xml version="1.0" encoding="utf-8"?>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 141.4 32.4" style="enable-background:new 0 0 141.4 32.4;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#333333;}
+                .st1{fill:none;stroke:#081D4A;stroke-width:1.4;stroke-miterlimit:10;}
+                .st2{fill:#081D4A;}
+                .st3{fill:none;stroke:#081D4A;stroke-width:0.25;stroke-miterlimit:10;}
+                .st4{fill:none;stroke:#FFFFFF;stroke-width:0.15;stroke-miterlimit:10;}
+              </style>
+              <g>
+                <path class="st0" d="M57.8,29.9h-2.5l-6.7-10.3c-0.2-0.2-0.3-0.5-0.4-0.8H48c0,0.3,0.1,0.9,0.1,1.9v9.3h-2.2V15.8h2.7l6.5,10.1
+                  c0.3,0.4,0.4,0.7,0.5,0.8l0,0c-0.1-0.4-0.1-1.1-0.1-1.9v-9.1h2.2L57.8,29.9z"/>
+                <path class="st0" d="M71.9,24c0,3.9-1.9,5.9-5.6,5.9c-3.6,0-5.4-1.9-5.4-5.7v-8.5h2.3v8.1c0,2.7,1.1,4.1,3.2,4.1c2,0,3.1-1.4,3.1-4
+                  v-8.2h2.3V24H71.9z"/>
+                <path class="st0" d="M84.2,17.7h-4v12h-2.3v-12h-4v-2h10.3V17.7z"/>
+                <path class="st0" d="M85.5,29.2v-2.4c0.2,0.2,0.4,0.4,0.7,0.5c0.3,0.1,0.6,0.3,0.9,0.4c0.3,0.1,0.6,0.2,0.9,0.2
+                  c0.3,0.1,0.6,0.1,0.9,0.1c0.9,0,1.7-0.2,2.2-0.5c0.5-0.3,0.7-0.8,0.7-1.4c0-0.3-0.1-0.6-0.2-0.8c-0.2-0.2-0.4-0.4-0.6-0.6
+                  c-0.3-0.2-0.6-0.4-1.1-0.6c-0.4-0.2-0.8-0.4-1.3-0.6c-0.5-0.2-0.9-0.5-1.4-0.7c-0.4-0.2-0.7-0.5-1.1-0.8c-0.3-0.3-0.5-0.6-0.7-1.1
+                  c-0.2-0.4-0.2-0.8-0.2-1.4c0-0.6,0.1-1.3,0.4-1.7c0.3-0.5,0.7-0.8,1.2-1.2c0.5-0.3,1.1-0.5,1.7-0.7c0.6-0.1,1.3-0.2,1.9-0.2
+                  c1.5,0,2.5,0.2,3.2,0.5v2.3c-0.8-0.5-1.8-0.8-3.1-0.8c-0.3,0-0.7,0-1.1,0.1s-0.6,0.2-0.9,0.3c-0.3,0.1-0.5,0.3-0.6,0.5
+                  C88,18.7,88,19,88,19.4c0,0.3,0.1,0.6,0.2,0.8c0.1,0.2,0.3,0.4,0.5,0.6s0.5,0.4,0.9,0.5c0.3,0.2,0.7,0.4,1.3,0.6s0.9,0.5,1.4,0.8
+                  c0.4,0.3,0.8,0.6,1.2,0.9c0.3,0.3,0.6,0.7,0.7,1.2c0.2,0.4,0.3,0.8,0.3,1.4c0,0.7-0.1,1.3-0.4,1.8c-0.3,0.5-0.6,0.8-1.2,1.2
+                  c-0.5,0.3-1.1,0.5-1.7,0.6c-0.6,0.1-1.3,0.2-2,0.2c-0.2,0-0.5,0-0.8-0.1c-0.3,0-0.7-0.1-1.1-0.1c-0.3-0.1-0.7-0.1-1.1-0.2
+                  C86.1,29.4,85.7,29.3,85.5,29.2z"/>
+                <path class="st0" d="M108.3,29.7H106v-6.1h-6.5v6.1h-2.3v-14h2.3v5.9h6.5v-5.9h2.3V29.7z"/>
+                <path class="st0" d="M119.6,29.7h-7.8v-14h7.5v2h-5.2v4h4.8v2h-4.8v4.1h5.5L119.6,29.7z"/>
+                <path class="st0" d="M129.8,29.7h-7.7v-14h2.3v12h5.4V29.7z"/>
+                <path class="st0" d="M139.6,29.7h-7.7v-14h2.3v12h5.4V29.7z"/>
+                <g>
+                  <path class="st0" d="M46.6,4.6c-0.1,0-0.3,0-0.4-0.1C46.1,4.4,46,4.3,46,4.1c0-0.1,0.1-0.3,0.2-0.4c0.1-0.1,0.2-0.1,0.3-0.1
+                    s0.3,0,0.4,0.1c0.1,0.1,0.2,0.2,0.2,0.4c0,0.1-0.1,0.3-0.2,0.4C47,4.6,46.7,4.6,46.6,4.6z M46.3,13.6V6.4H47v7.2H46.3z"/>
+                  <path class="st0" d="M54.1,13.6V9.3c0-1.7-0.6-2.5-1.9-2.5c-0.7,0-1.3,0.2-1.7,0.7c-0.4,0.5-0.6,1.2-0.6,1.9v4.1h-0.6V6.4h0.6v1.3
+                    l0,0c0.5-0.9,1.4-1.5,2.4-1.5c0.7,0,1.4,0.2,1.8,0.7c0.4,0.5,0.6,1.3,0.6,2.2v4.3h-0.6V13.6z"/>
+                  <path class="st0" d="M65.1,13.6v-1.5l0,0c-0.2,0.5-0.5,0.8-0.9,1.2c-0.4,0.3-0.9,0.4-1.5,0.4c-0.6,0-1.3-0.2-1.6-0.5
+                    c-0.4-0.4-0.6-0.8-0.6-1.5c0-1.3,0.8-2,2.5-2.2l2.2-0.3c0-1.6-0.5-2.3-1.7-2.3c-0.7,0-1.6,0.3-2.3,0.9V7c0.3-0.2,0.6-0.4,1.1-0.5
+                    s0.8-0.2,1.3-0.2c0.7,0,1.3,0.2,1.7,0.7c0.4,0.4,0.6,1.2,0.6,2v4.6h-0.7V13.6z M63.2,10c-0.7,0.1-1.3,0.3-1.6,0.5
+                    s-0.4,0.6-0.4,1.2c0,0.4,0.1,0.7,0.4,1.1c0.3,0.3,0.6,0.4,1.2,0.4c0.7,0,1.3-0.2,1.7-0.7c0.4-0.5,0.7-1.2,0.7-2V9.7L63.2,10z"/>
+                </g>
+                <g>
+                  <g>
+                    <g>
+                      <g>
+                        <path class="st1" d="M34.2,17.3c-1.3,0.9-4,3.2-8.8,5.6c-2.1,1-5.1,2.4-8.6,2.9c-2.7,0.3-3.7,0-3.8-0.3c0-0.1,0.1-0.5,0-0.5
+                          c-0.1,0-0.2,0.3-0.5,0.3c-0.8-0.3-2.1-0.9-2.4-1.5c-0.1-0.2,0.1-0.3-0.1-0.6c-0.2-0.1-0.9-0.8-1.2-1.4c-0.2-0.3,0-0.3-0.1-1.4
+                          c-0.1-1.3-0.5-1.6-0.1-2.2C8.7,18,8.9,18,9,17.7c0.1-0.5-0.2-0.8-0.2-1.3c0-0.7,0.6-0.9,1.2-1.6c0.7-0.9,0.5-1.5,0.9-2.8
+                          c0.5-1.3,1.4-2.1,3.1-3.7c0.9-0.8,1.7-1.5,2.8-2.2c3.6-2.1,6.3-1.5,10.3-0.8c0.5,0.1,0.9,0.6,1.3,1.2c0.1,0.1,1-0.2,1.7,0
+                          c1,0.3,1.8,1.8,2.2,2.1c0.2,0.2,1.2,0,2,0.5c1.5,0.7,1.7,2.9,1.8,3.2C36,14.4,34.4,17.1,34.2,17.3z"/>
+                        <path class="st2" d="M15.5,8.6l3.2-2C19.3,6.4,21,6.4,21,6.4l0.7,0.3l2.8-0.2l0.3,1.2L26,7.9c0,0,0.3,0.5,0.8,0.8
+                          C27.6,9.3,28.6,9,29.4,9c0.5,0-0.1,0.2,1,0.6c0.5,0.1,1.5,0.5,1.5,0.3c0-0.3-0.1-0.8,0-0.8c0.1,0,1.3,2.9,1.3,2.9l-1.8-1.2
+                          l-3-0.8l-0.6-0.6L27,9.6L25.6,9l-0.5-0.5L24.2,8l-1.2-0.5h-1.2l-1.2-0.7L19.2,7L15.5,8.6z"/>
+                        <path class="st2" d="M26.2,19.9l-0.7-0.3L25.3,18L24,18.2l-0.8,0.5c0,0-1.6-0.6-3.2-0.7c-1,0-1.8,0.1-1.8,0.1l-1.7-0.7
+                          l-0.5,0.2L15,17.8l-0.1-1l-1.2-0.9L12,15.1l3,3.2h2.2l0.3-0.2l0.9,0.8l3-0.2l1.4,0.5l2.2-0.7c0,0-0.2,0.9-0.1,1.3
+                          C25.2,20.3,26.2,19.9,26.2,19.9z"/>
+                        <path class="st2" d="M22.5,22.3l-4.6,1l-1,0.2l0.1,0.3l2.8-1.5c0,0,0.8,0.3,1.2,0.1c0.2-0.1,0.2-0.3,0.3-0.5
+                          C21.7,21.8,22.5,22.3,22.5,22.3z"/>
+                        <path class="st2" d="M31.2,16.6l-2-0.9c0,0,0.9-0.5,1.5,0C31.2,15.9,31.2,16.6,31.2,16.6z"/>
+                        <path class="st2" d="M15.7,23.8l-2.2,0.1l-0.8-1.3h-0.8c0,0-0.7-0.3-0.7-0.6c0-0.1,0.2-0.1,0.1-0.2c0-0.1-0.3-0.2-0.3-0.2h-0.5
+                          l-0.3-0.5c0-0.1-0.1-1-0.1-1h0.2l0.6,1h0.3l0.6,0.8l1.5,0.3l0.8,1l1.4-0.1L15.7,23.8z"/>
+                        <path class="st1" d="M36.3,17.9c0-0.2-0.1-0.3-0.3-0.8c-0.1-0.2-0.2-0.6-0.1-0.8c0-0.3,0.2-0.5,0.2-0.8
+                          c0.1-0.2,0.1-0.7-0.5-2.1c0-0.1-0.1-0.1-0.1-0.2c-0.2,2-1.4,3.8-1.5,3.9c-1.3,0.9-4,3.2-8.8,5.6c-2.1,1-5.1,2.4-8.6,2.9
+                          c0,0-1.3,0.3-3,0c-0.3,0-0.7-0.1-0.8-0.5c-0.1-0.2,0-0.5,0-0.5c-0.1,0-0.2,0.3-0.5,0.3c-0.2-0.1-0.6-0.2-0.9-0.3
+                          c0.3,0.7,0.8,1.2,1,1.5c-0.3,0.6,0.6,1.4,0.6,1.5c0.1,0.1,0.7-0.2,0.8-0.1c0.1,0.1-0.3,0.6-0.2,0.8c0.1,0.1,0.3,0.1,0.8,0.1
+                          c0.6,0,0.9,0.2,1.5,0.3c0.8,0.3,0.8,0.5,1.4,0.7c0.9,0.3,1.4-0.1,2.3-0.1c1,0,1.5,0.6,2.3,1c2.3,1,5.4-0.5,6.9-1.6
+                          c1.7-1.3,1.3-2,3.3-3.5c0.5-0.3,1.4-0.9,2.3-2.1c0.5-0.7,0.7-1.2,0.8-1.3c0.1-0.5,0.2-0.9,0.5-2.1c0.2-1,0.1-0.9,0.2-1.3
+                          C36.3,18.5,36.5,18.2,36.3,17.9z"/>
+                        <path class="st2" d="M29,22.2l-0.8,0.3l0.2,0.8L28,24.2v0.7l-0.6,0.5l-0.2,0.7l0.3,0.2l-0.2,0.5v0.7l-0.8,1.2l-0.1,0.6l0.7-0.5
+                          l0.5-0.7l0.5-0.3c0.2-0.2,0.3-1,0.3-1l-0.2-0.6l0.2-0.9v-0.9l0.5-0.7L29,22.2z"/>
+                        <path class="st2" d="M32.8,21c-0.2,0.1-0.2,1,0.1,1.2c0.2,0.1,0.6-0.2,0.7-0.5c0.2-0.7-0.7-1.5-0.7-1.4c0,0,0.5,0.6,0.2,0.8
+                          C33.1,21.1,32.9,21,32.8,21z"/>
+                        <polygon class="st2" points="17.2,26.8 16.4,27.3 17.1,27.5 17.2,28 18,28.4 18.6,27.9 19.5,28 20,27.5 21.2,27.8 21.9,28.4
+                          21.9,28.8 23,29.2 21.8,29.4 21.1,28.6 20.3,28.2 19.3,28.7 18.3,28.7 16.6,28.2 15.4,27.6 15.9,27 16.4,26.5 18.4,26.5
+                          "/>
+                        <path class="st2" d="M35.3,19.3v1.3l-0.6,1l-0.6,1l-0.2,0.2l-1,0.8h-1.3l-0.7,0.8l-0.2,0.9l-0.9,1.4l-0.7,0.5l2.1-2l0.2-1.2
+                          l0.8-0.1l1.4-0.6C34,23.5,35.2,19.3,35.3,19.3z"/>
+                        <path class="st3" d="M40.3,8c-2.1-4.1-8.8-5.3-16.4-3.3c0.9,0.1,1.8,0.3,2.9,0.5c0.5,0.1,0.9,0.6,1.3,1.2c0.1,0.1,1-0.2,1.7,0
+                          c1,0.3,1.8,1.8,2.2,2.1c0.2,0.2,1.2,0,2,0.5c1.5,0.7,1.7,2.9,1.8,3.2c0.3,2.3-1.3,5.1-1.5,5.2c-1.3,0.9-4,3.2-8.8,5.6
+                          c-2.1,1-5.1,2.4-8.6,2.9c-2.7,0.3-3.7,0-3.8-0.3c0-0.1,0.1-0.5,0-0.5s-0.2,0.3-0.5,0.3c-0.8-0.3-2.1-0.9-2.4-1.5
+                          c-0.1-0.2,0.1-0.3-0.1-0.6c-0.2-0.1-0.9-0.8-1.2-1.4c-0.2-0.3,0-0.3-0.1-1.4c-0.1-1.3-0.5-1.6-0.1-2.2c0.1-0.3,0.3-0.3,0.5-0.7
+                          c0.1-0.5-0.2-0.8-0.2-1.3c0-0.7,0.6-0.9,1.2-1.6c0.7-0.9,0.5-1.5,0.9-2.8c0.1-0.5,0.3-0.8,0.6-1.2c-6.3,4.7-9.6,10.8-7.5,15
+                          c2.7,5.3,13,5.8,23.2,0.8C37,21.7,43,13.4,40.3,8z"/>
+                        <path class="st4" d="M40.2,6.6c-3-6-13.8-6.7-24.1-1.7S0,18.7,3,24.7s13.8,6.7,24.1,1.7S43.2,12.6,40.2,6.6z"/>
+                        <ellipse class="st2" cx="3.2" cy="22.4" rx="1.4" ry="1.4"/>
+                        <path class="st2" d="M9,30.1c-0.5,0.2-0.9,0-1-0.5c-0.2-0.5,0-0.9,0.5-1c0.5-0.2,0.9,0,1,0.5C9.6,29.4,9.4,30,9,30.1z"/>
+                      </g>
+                      <path class="st2" d="M33.7,11.2l0.5,0.7l-0.3,0.7l0.3,0.5v0.8l-0.5,0.5l-0.3,0.9l0.1,0.7c0,0-0.2,0.6-1.5,0.8
+                        c0,0.2,0.3,0.5,0.3,0.5l0.7-0.5l0.9-1.2c0,0,0.3-0.8,0.5-1.3c0-0.2,0.1-2.1,0.1-2.1l-0.6-2.3L33,10.1l0.8,0.3L33.7,11.2z"/>
+                      <path class="st2" d="M12.5,12.1l0.6,0.5l0.6-0.2l0.8-0.1l-0.1-0.2l0.7,0.5l1.1-0.1l0.7,0l0.6,0.4l1.2-0.3l0.6,0.3l-0.2-0.5
+                        l0.8,0.2l0.9,0.8l1.1-0.5l-1,0.1l-1-0.9l-1.3,0l-1.2,0.5l-0.1-0.6l-1,0.3l-0.9,0l-1.5-0.4c0,0-0.5,0.4-0.9,0.5
+                        C12.8,12.3,12.5,12.1,12.5,12.1z"/>
+                      <polygon class="st2" points="23.5,13.3 24.3,13.8 25.3,13.9 26.4,15 27.5,15.2 27.6,15.9 28.2,16.5 29,16.5 28.2,16.9
+                        26.8,15.5 26.2,15.4 25.3,14.3 23.9,14 22.7,12.7 				"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class = "header_menu">
+          <a class = "navigation_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class = "header_navigation">
+          <nav>
+            <a id = "" href = "#">Explore</a>
+            <a id = "" href = "#">Courses</a>
+            <a id = "" href = "#">Arcade</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class = "main_container">
+      <div class = "panel_container">
+        <div class = "panel">
+          <div class = "detail_screen">
+            <div id = "canvas">
+              <!--Insert canvas here-->
+            </div>
+            <div class = "presentation">
+              <h2 id = "heading">Offering the possibility of learning science for everyone.</h2>
+              <p id = "describe">Join In a Nutshell to broaden your knowledge horizon. Your progress will be saved. Chat with people who share the same interests in science with you. Exchange knowledge. Exchange power.</p>
+            </div>
+          </div>
+          <div class = "form_container">
+            <div class = "form_panel">
+              <div class = "In_Up">
+                <div class = "In">
+                  <a id = "sign_in"><h2>Sign In</h2></a>
+                </div>
+                <div class = "_"><h3>or</h3></div>
+                <div class = "Up active">
+                  <a id = "sign_out"><h2>Sign Up</h2></a>
+                </div>
+              </div>
+              <div class = "description">Your account will provide you the access to all of our features: courses, projects, experiments, forums, educational resources and more!</div>
+              <div style = "text-align: center">
+                <form>
+                  <div class = "Sign_Up">
+                    <div class = "form">
+                      <div class = "group">
+                        <input type = "text" placeholder = "First Name" class = "text_form">
+                        <input type = "text" placeholder = "Last Name" class = "text_form">
+                      </div>
+                      <div class = "group">
+                        <input type = "text" placeholder = "Email Address" class = "text_form">
+                      </div>
+                      <div class = "group">
+                        <input type = "password" placeholder = "Password" class = "text_form">
+                        <input type = "password" placeholder = "Confirm Password" class = "text_form">
+                      </div>
+                    </div>
+                    <button type = "button" class = "btn" style = "cursor: pointer">Sign Up</button>
+                  </div>
+                  <div class = "Sign_In hide">
+                    <div class = "form">
+                      <div class = "group">
+                        <input type = "text" placeholder = "Email Address" class = "text_form">
+                      </div>
+                      <div class = "group">
+                        <input type = "password" placeholder = "Password" class = "text_form">
+                      </div>
+                    </div>
+                    <button type = "button" class = "btn" style = "cursor: pointer">Sign Up</button>
+                  </div>
+                </form>
+                <a href = "#" class = "forgot_password hide">Forgot your password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
